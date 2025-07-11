@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <style>
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .slideshow-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+
+        .slideshow-container img.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="nav-closed">
+    <header>
+        <div class="hamburger" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="nav-links">
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="faq.html">FAQs</a>
+            <a href="index.html">HOME</a>
+        </div>
+        <div class="logo">
+            <a href="aboutus.html">
+                <img src="Images/Logo.png" alt="Logo">
+            </a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="the history.html">The History</a></li>
+                <li><a href="artifacts.html">Wau Bulan & Labu Sayong</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="main-content">
+                <div class="section-title">WAU BULAN</div>
+                <div class="content-container">
+                <div class="content-item">
+                    <div class="card">
+                        <img src="Images/waubulanmaking1.jpg" alt="wau-bulan">
+                    <div class="card-content">
+                        <h2>Crafting The Wau</h2>
+                    </div>
+                    </div>
+                </div>
+                    <div class="content-item">
+                        <div class="card">
+                            <img src="Images/waubulanmaking2.jpg" alt="wau-bulan">
+                            <div class="card-content">
+                                <h2>Designing The Wau Fabric</h2>
+                            </div>
+                        </div>
+                </div>
+                <div class="content-item">
+                        <div class="card">
+                            <img src="Images/waubulanmaking3.jpeg" alt="wau-bulan">
+                            <div class="card-content">
+                                <h2>Assembling The Wau Frame</h2>
+                            </div>
+                        </div>
+                </div>
+                <div class="content-item">
+                        <div class="card">
+                            <img src="Images/waubulanmaking4.jpg" alt="wau-bulan">
+                            <div class="card-content">
+                                <h2>Wau Crafting Competition in Progress</h2>
+                            </div>
+                        </div>
+                </div>
+                <div class="content-item">
+                        <div class="card">
+                            <img src="Images/waubulanmaking5.jpg" alt="wau-bulan">
+                            <div class="card-content">
+                                <h2>Sketching Detailing Design on The Wau</h2>
+                            </div>
+                        </div>
+                </div>
+            </div>          
+                <div class="section-title">Labu Sayong</div>
+                <div class="content-container">
+                    <div class="content-item">
+                        <div class="card">
+                            <img src="Images/labusayongmaking1.jpg" alt="labu-sayong">
+                            <div class="card-content">
+                                <h2>Shaping The Labu Sayong</h2>
+                            </div>
+                        </div>
+                </div>
+                    <div class="content-item">
+                        <div class="card">
+                            <img src="Images/labusayongmaking2.jpg" alt="labu-sayong">
+                            <div class="card-content">
+                                <h2>Crafting The Base of The Labu Sayong</h2>
+                            </div>
+                        </div>
+                </div>
+                <div class="content-item">
+                        <div class="card">
+                            <img src="Images/labusayongmaking3.jpeg" alt="labu-sayong">
+                            <div class="card-content">
+                                <h2>Adding Intricate Designs to the Labu Sayong</h2>
+                            </div>
+                        </div>
+                </div>
+                <div class="content-item">
+                        <div class="card">
+                            <img src="Images/labusayongmaking4.jpg" alt="labu-sayong">
+                            <div class="card-content">
+                                <h2>Carving Detailed Patterns on The Labu Sayong</h2>
+                            </div>
+                        </div>
+                </div>
+                <div class="content-item">
+                        <div class="card">
+                            <img src="Images/labusayongmaking5.jpg" alt="labu-sayong">
+                            <div class="card-content">
+                                <h2>Decorating The Labu Sayong with Traditional Motifs</h2>
+                            </div>
+                        </div>
+                </div>
+                </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Wau Bulan & Labu Sayung: Preserving Malaysian Heritage</p>
+    </footer>
+    <script src="gallery.js"></script>
+</body>
+</html>

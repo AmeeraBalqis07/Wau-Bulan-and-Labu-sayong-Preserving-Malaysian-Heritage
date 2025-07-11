@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Archiving</title>
+    <link rel="stylesheet" type="text/css" href="faq.css">
+</head>
+<body class="nav-closed">
+    <header>
+        <div class="hamburger" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="nav-links">
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="faq.html">FAQ</a>
+            <a href="index.html">HOME</a>
+        </div>
+        <div class="logo">
+            <a href="aboutus.html">
+                <img src="Images/Logo.png" alt="Logo">
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="the history.html">The History</a></li>
+                <li><a href="artifacts.html">Wau Bulan & Labu Sayong</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="faq-section">
+                <h2>FAQ's</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">What can I find on this website?</button>
+                        <div class="faq-answer">
+                            <p>This website provides a comprehensive collection of information about Wau Bulan and Labu Sayong, their history, significance, and cultural value in Malaysia. It also includes details about the website's vision, mission, and the webmaster's profile.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Where can I learn about the history of Wau Bulan and Labu Sayong?</button>
+                        <div class="faq-answer">
+                            <p>Visit the "The History" section to explore the origins and cultural importance of Wau Bulan and Labu Sayong in Malaysian heritage. This section highlights their traditional craftsmanship and role in local culture.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What is the vision and mission of this website?</button>
+                        <div class="faq-answer">
+                            <p>Our vision is to preserve and promote the rich cultural heritage of Malaysia, specifically the art forms of Wau Bulan and Labu Sayong. Our mission is to educate, inspire, and provide resources for people to appreciate and learn more about these traditions.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Who is the webmaster behind this website?</button>
+                        <div class="faq-answer">
+                            <p>Our webmaster is dedicated to preserving and sharing knowledge about Malaysian culture. Visit the "Webmaster Profile" section to learn more about the person behind this website, their expertise, and passion for heritage preservation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How can I access the gallery of Wau Bulan and Labu Sayong?</button>
+                        <div class="faq-answer">
+                            <p>You can view beautiful images of Wau Bulan and Labu Sayong in the "Gallery" section, where we showcase the artistry and craftsmanship of these traditional crafts, as well as the events and exhibitions promoting them.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Support & Help Desk</button>
+                        <div class="faq-answer">
+                            <p>Email: preservingheritage@gmail.com</p>
+                            <p>Phone: 011-12115467</p>
+                            <p>Please feel free to email us with any questions, thoughts, or suggestions.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+<footer>
+    <p>&copy; 2025 Wau Bulan & Labu Sayong: Preserving Malaysian Heritage</p>
+</footer>
+
+    <script src="index.js"></script>
+
+    <!-- JavaScript for FAQ toggle -->
+    <script>
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                // Toggle the active class
+                this.classList.toggle('active');
+
+                // Get the next sibling (faq-answer)
+                const answer = this.nextElementSibling;
+
+                // Toggle max-height to expand or collapse
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
